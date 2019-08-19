@@ -1,5 +1,3 @@
-# beep
+# welcome to my site
 
-Looks like you didnt get redirected.
-
-[go home](https://hi.advaith.fun)
+[advaith.fun](https://advaith.fun)
