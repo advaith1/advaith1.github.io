@@ -3,6 +3,16 @@
     "name": "Advaith's Website",
     "icons": [
       {
+        "src": "https://i.bi5.me/yhZ97.png",
+        "type": "image/png",
+        "sizes": "596x596"
+      },
+      {
+        "src": "https://i.bi5.me/O01P.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
         "src": "https://cdn.discordapp.com/avatars/190916650143318016/a_a7e037f26b5242d15325bd8739a41520.png?size=512",
         "type": "image/png",
         "sizes": "298x298"
@@ -11,6 +21,11 @@
         "src": "https://cdn.discordapp.com/avatars/190916650143318016/a_a7e037f26b5242d15325bd8739a41520.png?size=256",
         "type": "image/png",
         "sizes": "256x256"
+      },
+      {
+        "src": "https://i.bi5.me/pw0I.png ",
+        "type": "image/png",
+        "sizes": "512x512"
       },
       {
         "src": "https://cdn.discordapp.com/avatars/190916650143318016/a_a7e037f26b5242d15325bd8739a41520.png",

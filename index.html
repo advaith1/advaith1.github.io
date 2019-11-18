@@ -53,9 +53,17 @@
     <link rel="preconnect" href="https://static.bisoga.xyz">
     <link rel="dns-prefetch" href="https://static.bisoga.xyz">
 
+    <script src="webp.js"></script>
+
     <style>
       strong {
         color: hsl(0, 0%, 96%)
+      }
+      .no-webp div.hero-body {
+        background: url('https://ssl.gstatic.com/atari/images/level-header.png') center; background-size: cover
+      }
+      .webp div.hero-body {
+        background: url('https://i.bi5.me/GciJIB-.webp') center; background-size: cover
       }
       .header {
         color: white;
@@ -69,8 +77,16 @@
       }
       .advbottext {
         color: white;
-        background-size: cover !important;
-        background: url('https://advaithbot.com/files/background.jpg') no-repeat center;
+        background-size: cover !important
+      }
+      .no-webp .advbottext {
+        background: url('https://advaithbot.com/files/background 512.jpg') no-repeat center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent
+      }
+      .webp .advbottext {
+        background: url('https://advaithbot.com/files/background 512.webp') no-repeat center;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent
@@ -117,7 +133,7 @@
   </head>
   <body class="has-text-white-ter">
     <section class="hero is-medium is-primary is-bold">
-      <div class="hero-body" style="background: url('https://ssl.gstatic.com/atari/images/level-header.png') center; background-size: cover">
+      <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title is-1">
             <span class="header">
@@ -159,7 +175,13 @@
         </h3>
         <div class="columns">
           <div class="column has-text-centered">
-            <a href="https://advaithbot.com" target="_blank" rel="noopener"><img style="width: 90%" class="rounded" src="https://advaithbot.com/files/1_optimized.png" alt="AdvaithBot"></a>
+            <a href="https://advaithbot.com" target="_blank" rel="noopener">
+              <picture>
+                <source type="image/webp" srcset="https://advaithbot.com/files/1_optimized.webp">
+                <source type="image/png" srcset="https://advaithbot.com/files/1_optimized.png">
+                <img style="width: 90%" class="rounded" src="https://advaithbot.com/files/1_optimized.png" alt="AdvaithBot">
+              </picture>
+            </a>
             <h4 class="title is-3"><span class="advbottext"><a href="https://advaithbot.com">AdvaithBot</a></span></h4>
             <p style="color: #00AFD5">A cool multipurpose Discord bot with commands for fun, animals, searching, utility, text, info, moderation, urls, and emoji.</p><br>
             <p>
@@ -171,7 +193,13 @@
             </p>
           </div>
           <div class="column has-text-centered">
-            <a href="https://moosic.co" target="_blank" rel="noopener"><img style="width: 90%" class="rounded" src="https://moosic.co/images/moosic-512.png" alt="Moosic"></a>
+            <a href="https://moosic.co" target="_blank" rel="noopener">
+              <picture>
+                <source type="image/webp" srcset="https://moosic.co/images/moosic.webp 200w, https://moosic.co/images/moosic%202x.webp 400w, https://moosic.co/images/moosic-512.webp 512w, https://moosic.co/images/moosic%204x.webp 800w" sizes="(max-width: 768px) 80vw, (min-width: 769px) 20vw">
+                <source type="image/png" srcset="https://moosic.co/images/moosic.png 200x, https://moosic.co/images/moosic%202x.png 400w, https://moosic.co/images/moosic-512.png 512w, https://moosic.co/images/moosic%204x.png 800w" sizes="(max-width: 768px) 80vw, (min-width: 769px) 20vw">
+                <img style="width: 90%" class="rounded" src="https://moosic.co/images/moosic-512.png" alt="Moosic">
+              </picture>
+            </a>
             <h4 class="title is-3"><a href="https://moosic.co"><span style="color:#55acee">Moosic</span></a></h4>
             <p style="color: #55acee">A super easy-to-use Discord music bot. Listen to music with your friends in Discord, for free!</p><br>
             <p>
@@ -183,9 +211,9 @@
           <div class="column has-text-centered">
             <a href="https://yesno.advaith.fun" target="_blank" rel="noopener">
               <picture>
-                <source type="image/webp" srcset="https://cdn.discordapp.com/avatars/526189797711151114/a9864357c703106bd1c935cde460fe4a.webp?size=512">
-                <source type="image/png" srcset="https://cdn.discordapp.com/avatars/526189797711151114/a9864357c703106bd1c935cde460fe4a.png?size=512">
-                  <img style="width: 90%" class="rounded" src="https://cdn.discordapp.com/avatars/526189797711151114/a9864357c703106bd1c935cde460fe4a.png?size=512" alt="YesNo">
+                <source type="image/webp" srcset="https://cdn.discordapp.com/avatars/526189797711151114/a9864357c703106bd1c935cde460fe4a.webp?size=256 256w, https://cdn.discordapp.com/avatars/526189797711151114/a9864357c703106bd1c935cde460fe4a.webp?size=512 512w, https://cdn.discordapp.com/avatars/526189797711151114/a9864357c703106bd1c935cde460fe4a.webp?size=1024 1024w" sizes="(max-width: 768px) 80vw, (min-width: 769px) 20vw">
+                <source type="image/png" srcset="https://cdn.discordapp.com/avatars/526189797711151114/a9864357c703106bd1c935cde460fe4a.png?size=256 256w, https://cdn.discordapp.com/avatars/526189797711151114/a9864357c703106bd1c935cde460fe4a.png?size=512 512w, https://cdn.discordapp.com/avatars/526189797711151114/a9864357c703106bd1c935cde460fe4a.png?size=1024 1024w" sizes="(max-width: 768px) 80vw, (min-width: 769px) 20vw">
+                <img style="width: 90%" class="rounded" src="https://cdn.discordapp.com/avatars/526189797711151114/a9864357c703106bd1c935cde460fe4a.png?size=512" alt="YesNo">
               </picture>
             </a>
             <h4 class="title is-3"><a href="https://yesno.advaith.fun"><span style="color: #02e972">Yes</span><span style="color: #ff3c80">No</span></a></h4>
@@ -199,8 +227,8 @@
           <div class="column has-text-centered">
             <a href="https://widgetbot.io" target="_blank" rel="noopener">
               <picture>
-                <source type="image/webp" srcset="https://cdn.discordapp.com/avatars/293731150239891456/f7d78d0c7e6522ed296bfa315b3a1969.webp?size=512">
-                <source type="image/png" srcset="https://cdn.discordapp.com/avatars/293731150239891456/f7d78d0c7e6522ed296bfa315b3a1969.png?size=512">
+                <source type="image/webp" srcset="https://cdn.discordapp.com/avatars/293731150239891456/f7d78d0c7e6522ed296bfa315b3a1969.webp?size=256 256w, https://cdn.discordapp.com/avatars/293731150239891456/f7d78d0c7e6522ed296bfa315b3a1969.webp?size=512 512w, https://cdn.discordapp.com/avatars/293731150239891456/f7d78d0c7e6522ed296bfa315b3a1969.webp?size=1024 1024w" sizes="(max-width: 768px) 80vw, (min-width: 769px) 20vw">
+                <source type="image/png" srcset="https://cdn.discordapp.com/avatars/293731150239891456/f7d78d0c7e6522ed296bfa315b3a1969.png?size=256 256w, https://cdn.discordapp.com/avatars/293731150239891456/f7d78d0c7e6522ed296bfa315b3a1969.png?size=512 512w, https://cdn.discordapp.com/avatars/293731150239891456/f7d78d0c7e6522ed296bfa315b3a1969.png?size=1024 1024w" sizes="(max-width: 768px) 80vw, (min-width: 769px) 20vw">
                 <img style="width: 90%" class="rounded" src="https://cdn.discordapp.com/avatars/293731150239891456/f7d78d0c7e6522ed296bfa315b3a1969.png?size=512" alt="WidgetBot">
               </picture>
             </a>
@@ -208,7 +236,7 @@
             <p style="color: #707fe5">Embed your Discord server on your website! Let guests read and send messages in real time, even if they don't have a Discord account. (aka DisWeb)</p><br>
             <p>
               <a href="https://discord.gg/8zYvp6W" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/299881420891881473?color=%237289DA&logo=discord&logoColor=white" alt="Discord"></a>
-              <a href="https://twitter.com/diswebio" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/twitter/follow/diswebio?color=1da1f2&label=follow&logo=twitter&logoColor=white&style=flat" alt="Twitter"></a>
+              <a href="https://twitter.com/widgetbot_io" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/twitter/follow/widgetbot_io?color=1da1f2&label=follow&logo=twitter&logoColor=white&style=flat" alt="Twitter"></a>
             </p>
           </div>
         </div>
@@ -222,7 +250,13 @@
         </h3>
         <div class="columns">
           <div class="column has-text-centered">
-            <a href="https://bisoga.xyz" target="_blank" rel="noopener"><img style="width: 90%" src="https://static.bisoga.xyz/logo1.png" alt="BiSoga"></a>
+            <a href="https://bisoga.xyz" target="_blank" rel="noopener">
+              <picture>
+                <source type="image/webp" srcset="https://static.bisoga.xyz/logo1.webp">
+                <source type="image/png" srcset="https://static.bisoga.xyz/logo1.png">
+                  <img style="width: 90%" src="https://static.bisoga.xyz/logo1.png" alt="BiSoga">
+              </picture>
+            </a>
             <h4 class="title is-3"><span class="bisogatext"><a href="https://bisoga.xyz">BiSoga</a></span></h4>
             <p style="color: #675bff">A free and simple URL shortener, file host, and pastebin to help you share with your friends.</p><br>
             <p>
@@ -233,20 +267,26 @@
           <div class="column has-text-centered">
             <a href="https://discordsbestbots.xyz" target="_blank" rel="noopener">
               <picture>
-                <source type="image/webp" srcset="https://cdn.discordapp.com/icons/446682534135201793/b064f255029f9dab3baf3ae2b8afa832.webp?size=512">
-                <source type="image/png" srcset="https://cdn.discordapp.com/icons/446682534135201793/b064f255029f9dab3baf3ae2b8afa832.png?size=512">
-                <img style="width: 90%" class="rounded" src="https://cdn.discordapp.com/icons/446682534135201793/b064f255029f9dab3baf3ae2b8afa832.png?size=512" alt="Discord's Best Bots">
+                <source type="image/webp" srcset="https://i.bi5.me/MF0.webp">
+                <source type="image/png" srcset="https://i.bi5.me/tA.png">
+                <img style="width: 90%" class="rounded" src="https://i.bi5.me/tA.png" alt="Discord's Best Bots">
               </picture>
             </a>
             <h4 class="title is-3"><a href="https://discordsbestbots.xyz"><span style="color: #7289DA">Discord's Best Bots</span></a></h4>
             <p style="color: #7289DA">Explore our list of the best bots on Discord and find the perfect ones for your server.</p><br>
             <p>
-              <a href="https://discord.gg/Ge6YNTN" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/446682534135201793?color=%237289DA&logo=discord&logoColor=white" alt="Discord"></a>
+              <a href="https://discord.gg/nAVYVfz" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/446682534135201793?color=%237289DA&logo=discord&logoColor=white" alt="Discord"></a>
               <a href="https://twitter.com/discordbestbots" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/twitter/follow/discordbestbots?color=1da1f2&label=follow&logo=twitter&logoColor=white&style=flat" alt="Twitter"></a>
             </p>
           </div>
           <div class="column has-text-centered">
-            <a href="https://dynocc.xyz" target="_blank" rel="noopener"><img style="width: 90%" src="https://i.bi5.me/-Mv.png" alt="Dyno Custom Commands"></a>
+            <a href="https://dynocc.xyz" target="_blank" rel="noopener">  
+              <picture>
+                <source type="image/webp" srcset="https://i.bi5.me/1uh0t.webp 516w, https://i.bi5.me/urJ.webp 1032w" sizes="(max-width: 768px) 80vw, (min-width: 769px) 20vw">
+                <source type="image/png" srcset="https://i.bi5.me/eK9.png 516w, https://i.bi5.me/-Mv.png 1032w" sizes="(max-width: 768px) 80vw, (min-width: 769px) 20vw">
+                <img style="width: 90%" src="https://i.bi5.me/-Mv.png" alt="Dyno Custom Commands">
+              </picture>
+            </a>
             <h4 class="title is-3"><span class="dcctext"><a href="https://dynocc.xyz">Dyno Custom Commands</a></span></h4>
             <p style="color: #ffb100">A community-driven collection of custom commands for the popular bot Dyno, as well as a 600+ member community about custom commands.</p><br>
             <p>
@@ -254,7 +294,13 @@
             </p>
           </div>
           <div class="column has-text-centered">
-            <a href="https://quailstudio.wixsite.com/quailstudio" target="_blank" rel="noopener"><img style="width: 90%" src="https://i.bi5.me/818lEWGM.png" alt="Quail Studio"></a>
+            <a href="https://quailstudio.wixsite.com/quailstudio" target="_blank" rel="noopener">
+              <picture>
+                <source type="image/webp" srcset="https://i.bi5.me/Gi-aUH.webp">
+                <source type="image/png" srcset="https://i.bi5.me/818lEWGM.png">
+                  <img style="width: 90%" src="https://i.bi5.me/818lEWGM.png" alt="Quail Studio">
+              </picture>
+            </a>
             <h4 class="title is-3"><a href="https://quailstudio.wixsite.com/quailstudio"><span style="color: #00d8d8">Quail Studio</span></a></h4>
             <p style="color: #00d8d8">Desktop, web, and mobile games including Him (a 3D game in development), Bro-Tastic (a 2D runner and survival game), and Jungle Bash.</p><br>
             <p>
@@ -277,7 +323,7 @@
         </p>
         <div class="content">
           <ul>
-            <li><a href="https://discordsbestbots.xyz" target="_blank" rel="noopener">Discord's Best Bots</a><span class="space"></span><a href="https://discord.gg/g5AnFRp" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/446682534135201793?color=%237289DA&logo=discord&logoColor=white" alt="Discord"></a></li>
+            <li><a href="https://discordsbestbots.xyz" target="_blank" rel="noopener">Discord's Best Bots</a><span class="space"></span><a href="https://discord.gg/nAVYVfz" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/446682534135201793?color=%237289DA&logo=discord&logoColor=white" alt="Discord"></a></li>
             <li><a href="https://discordextremelist.xyz" target="_blank" rel="noopener">Discord Extreme List</a><span class="space"></span><a href="https://discord.gg/cYnpb7T" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/568567800910839811?color=%237289DA&logo=discord&logoColor=white" alt="Discord"></a></li>
             <li><a href="https://discordbot.world" target="_blank" rel="noopener">Discord Bot World</a><span class="space"></span><a href="https://discord.gg/h44Rph6" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/396440418507816960?color=%237289DA&logo=discord&logoColor=white" alt="Discord"></a></li>
           </ul>
@@ -335,7 +381,14 @@
       <div class="container">
         <p class="text">This site was made in HTML and CSS. <a href="https://bulma.io" target="_blank" rel="noopener"><img src="https://bulma.io/images/made-with-bulma--semiwhite.png" alt="Made with Bulma" width="128" height="24" style="vertical-align: sub"></a>. Icons powered by <a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a> and <a href="https://material.io/resources/icons" target="_blank" rel="noopener">Material Icons</a>. Badges powered by <a href="https://shields.io" target="_blank" rel="noopener">Shields.io</a>. <a href="https://ssl.gstatic.com/atari/images/level-header.png" target="_blank" rel="noopener">Header image</a> by Google. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>. You can look at <a href="https://github.com/advaith1/advaith1.github.io" target="_blank" rel="noopener">the source</a>. Thanks for checking out my site.</p><br>
         <p class="text">© 2019 Advaith Jagathesan</p><br>
-        <p class="has-text-centered"><a href="https://www.battleforthenet.com" target="_blank" rel="noopener"><img class="rounded" style="max-height: 80px" src="https://i.bi5.me/2lKWd4.png" alt="Don't let big cable kill net neutrality | BattleForTheNet.com"></a></p>
+        <p class="has-text-centered"><a href="https://www.battleforthenet.com" target="_blank" rel="noopener">
+          <picture>
+              <source type="image/webp" srcset="https://i.bi5.me/LVSkNdPJ.webp">
+              <source type="image/png" srcset="https://i.bi5.me/2lKWd4.png">
+              <img class="rounded" style="max-height: 80px" src="https://i.bi5.me/2lKWd4.png" alt="Don't let big cable kill net neutrality | BattleForTheNet.com">
+          </picture>
+          
+        </a></p>
       </div>
     </section>
     <script>
