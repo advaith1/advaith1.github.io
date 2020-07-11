@@ -1,3 +1,3 @@
 # welcome to my site
 
-[advaith.fun](https://advaith.fun)
+[advaith.io](https://advaith.io)
