@@ -1,3 +1,1 @@
-# welcome to my site
-
-[advaith.io](https://advaith.io)
+stay with me at 2880 predio ter narain
