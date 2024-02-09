@@ -28,16 +28,14 @@
     <link rel="dns-prefetch" href="https://advaithbot.xyz">
     <link rel="preconnect" href="https://api.statusbadges.me">
     <link rel="dns-prefetch" href="https://api.statusbadges.me">
-    <link rel="preconnect" href="https://bulma.io">
-    <link rel="dns-prefetch" href="https://bulma.io">
     <link rel="preconnect" href="https://cdn.discordapp.com">
     <link rel="dns-prefetch" href="https://cdn.discordapp.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://img.shields.io">
     <link rel="dns-prefetch" href="https://img.shields.io">
-    <link rel="preconnect" href="https://ssl.gstatic.com">
-    <link rel="dns-prefetch" href="https://ssl.gstatic.com">
+
+    <link rel="preload" as="image" href="images/level-header.webp">
 
     <script src="webp.js"></script>
 
@@ -54,11 +52,11 @@
       strong {
         color: hsl(0, 0%, 96%)
       }
+      div.hero-body {
+        background: url('images/level-header.webp') center; background-size: cover
+      }
       .no-webp div.hero-body {
         background: url('https://ssl.gstatic.com/atari/images/level-header.png') center; background-size: cover
-      }
-      .webp div.hero-body {
-        background: url('https://cdn.discordapp.com/attachments/252296452708106240/655293406674944021/level-header.webp') center; background-size: cover
       }
       .header {
         color: white;
@@ -83,19 +81,14 @@
       }
       .advbottext {
         color: white;
-        background-size: cover !important
-      }
-      .no-webp .advbottext {
-        background: url('https://advaithbot.xyz/files/background 512.jpg') no-repeat center;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent
-      }
-      .webp .advbottext {
+        background-size: cover !important;
         background: url('https://advaithbot.xyz/files/background 512.webp') no-repeat center;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent
+      }
+      .no-webp .advbottext {
+        background: url('https://advaithbot.xyz/files/background 512.jpg') no-repeat center;
       }
       .deltext {
         color: white;
@@ -181,17 +174,14 @@
         <div class="columns">
           <div class="column has-text-centered">
             <a href="https://github.com/advaith1/activities" target="_blank" rel="noopener">
-              <picture>
-                <source type="image/webp" srcset="https://cdn.discordapp.com/avatars/819778342818414632/5d0f97d51b01a19fd7ba915204222efc.webp?size=4096">
-                <source type="image/png" srcset="https://cdn.discordapp.com/avatars/819778342818414632/5d0f97d51b01a19fd7ba915204222efc.png?size=4096">
-                <img style="width: 90%" class="rounded" src="https://cdn.discordapp.com/avatars/819778342818414632/5d0f97d51b01a19fd7ba915204222efc.png?size=4096" alt="Activities" loading="lazy">
-              </picture>            </a>
+              <img style="width: 90%" class="rounded" src="images/activities.svg" alt="Activities" loading="lazy">
+            </a>
             <h4 class="title is-3"><a href="https://github.com/advaith1/activities" target="_blank" rel="noopener"><span style="color: #e6585f">Activities</span></a></h4>
             <p style="color: #e6585f">Play games and watch YouTube together in voice channels.</p><br>
             <p>
               <img height="20" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=servers&query=%24.guildCount&url=https%3A%2F%2Fdiscord.bots.gg%2Fapi%2Fv1%2Fbots%2F819778342818414632" alt="Servers" loading="lazy">
               <a href="https://discord.gg/SztAXAh" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/398998849026261003?color=%235865F2&logo=discord&logoColor=white" alt="Discord" loading="lazy"></a>
-              <a href="https://github.com/advaith1/activities" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/advaith1/activities?color=%23161b22&logo=github" alt="GitHub" loading="lazy"></a>
+              <a href="https://github.com/advaith1/activities" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/advaith1/activities?color=%23161b22&logo=github&style=flat" alt="GitHub" loading="lazy"></a>
 
             </p>
           </div>
@@ -219,7 +209,7 @@
             <p>
               <img height="20" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=servers&query=%24.guildCount&url=https%3A%2F%2Fdiscord.bots.gg%2Fapi%2Fv1%2Fbots%2F526189797711151114" alt="Servers" loading="lazy">
               <a href="https://discord.gg/SztAXAh" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/398998849026261003?color=%235865F2&logo=discord&logoColor=white" alt="Discord" loading="lazy"></a>
-              <a href="https://github.com/advaith1/yesno" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/advaith1/yesno?color=%23161b22&logo=github" alt="GitHub" loading="lazy"></a>
+              <a href="https://github.com/advaith1/yesno" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/advaith1/yesno?color=%23161b22&logo=github&style=flat" alt="GitHub" loading="lazy"></a>
             </p>
           </div>
           <div class="column has-text-centered">
@@ -234,7 +224,7 @@
             <p style="color: #707fe5">Embed your Discord server on your website! Let guests read and send messages in real time, even if they don't have a Discord account. (aka DisWeb)</p><br>
             <p>
               <a href="https://discord.gg/8zYvp6W" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/badge/chat-on%20discord-5865F2?logo=discord&logoColor=white" alt="Discord" loading="lazy"></a>
-              <a href="https://github.com/widgetbot-io" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/widgetbot-io?color=%23161b22&logo=github" alt="GitHub" loading="lazy"></a>
+              <a href="https://github.com/widgetbot-io" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/widgetbot-io?color=%23161b22&logo=github&style=flat" alt="GitHub" loading="lazy"></a>
             </p>
           </div>
         </div>
@@ -259,7 +249,7 @@
             <p style="color: #459be2">Discord's unbiased list, giving bots and servers of all sizes a big chance!</p><br>
             <p>
               <a href="https://discord.gg/XvvbSjv" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/568567800910839811?color=%235865F2&logo=discord&logoColor=white" alt="Discord" loading="lazy"></a>
-              <a href="https://github.com/discordextremelist" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/discordextremelist?color=%23161b22&logo=github" alt="GitHub" loading="lazy"></a>
+              <a href="https://github.com/discordextremelist" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/discordextremelist?color=%23161b22&logo=github&style=flat" alt="GitHub" loading="lazy"></a>
             </p>
           </div>
           <div class="column has-text-centered">
@@ -269,7 +259,7 @@
             <h4 class="title is-3"><a href="https://stickers.advaith.io" target="_blank" rel="noopener"><span style="color: #b9bbbe">Discord Sticker List</span></a></h4>
             <p style="color: #b9bbbe">A list of all the currently available Discord stickers, with sticker previews and data.</p><br>
             <p>
-              <a href="https://github.com/advaith1/stickers" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/advaith1/stickers?color=%23161b22&logo=github" alt="GitHub" loading="lazy"></a>
+              <a href="https://github.com/advaith1/stickers" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/advaith1/stickers?color=%23161b22&logo=github&style=flat" alt="GitHub" loading="lazy"></a>
             </p>
           </div>
           <div class="column has-text-centered">
@@ -288,7 +278,7 @@
             <h4 class="title is-3"><a href="https://rollouts.advaith.io" target="_blank" rel="noopener"><span class="header">Discord Server Experiment Rollouts</span></a></h4>
             <p style="color: #00d1b2">Lists Discord's server experiments and their current rollouts, treatments, and overrides.</p><br>
             <p>
-              <a href="https://github.com/advaith1/rollouts" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/advaith1/rollouts?color=%23161b22&logo=github" alt="GitHub" loading="lazy"></a>
+              <a href="https://github.com/advaith1/rollouts" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/advaith1/rollouts?color=%23161b22&logo=github&style=flat" alt="GitHub" loading="lazy"></a>
             </p>
           </div>
           <div class="column has-text-centered">
@@ -302,7 +292,7 @@
             <h4 class="title is-3"><a style="color: #5865f2" href="https://statusbadges.me">StatusBadges</a></h4>
             <p style="color: #5865f2">Shields-style badges showing what you're doing, powered by Discord</p><br>
             <p>
-              <a href="https://github.com/advaith1/statusbadges" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/advaith1/statusbadges?color=%23161b22&logo=github" alt="GitHub" loading="lazy"></a>
+              <a href="https://github.com/advaith1/statusbadges" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/github/stars/advaith1/statusbadges?color=%23161b22&logo=github&style=flat" alt="GitHub" loading="lazy"></a>
             </p>
           </div>
         </div>
